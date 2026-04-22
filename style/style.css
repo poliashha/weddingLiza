@@ -459,6 +459,11 @@ font-family: var(--kursiv-text);
   padding-bottom: 25px;
 }
 
+.second-conteiner{
+  max-width: 412px;
+  width: 100%;
+}
+
 @media (width<412px) {
   .imgplace {
     max-width: 412px;
