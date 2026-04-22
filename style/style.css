@@ -112,6 +112,13 @@ font-family: var(--kursiv-text);
   gap: 11px;
 }
 
+.place{
+  gap: 11px;
+  max-width: 412px;
+  width: 100%;
+  padding: 0;
+}
+
 .map-button {
   padding: 5px 43px;
   background-color: var(--button-color);
