@@ -163,6 +163,10 @@ font-family: var(--kursiv-text);
   margin-top: -60px;
 }
 
+.drsscode{
+  margin-top: -60px;
+}
+
 .timerimg{
   background-image: url(../img/fiveliza.svg);
   max-width: 412px;
