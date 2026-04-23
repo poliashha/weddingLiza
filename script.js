@@ -46,7 +46,7 @@ async function sendQuestionnaire(event) {
     console.error(error);
     formSendResult.textContent = "Спасибо! Анкета отправлена.";
   } finally {
-    formBth.textContent = "Подтверидить присутсвие";
+    formBth.textContent = "Отправить ответ";
   }
 }
 
