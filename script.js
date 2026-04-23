@@ -218,14 +218,14 @@ if (nameParam) {
 
   if (decodedName.includes(" ")) {
     document.getElementById("greeting").textContent =
-      `${names[0]} и ${names[2]}`;
+      `Дорогие ${names[0]} и ${names[2]}!`;
   } else {
     if (arr.includes(decodedName)) {
       document.getElementById("greeting").textContent =
-        `Дорогая ${decodedName}`;
+        `Дорогая ${decodedName}!`;
     } else
       document.getElementById("greeting").textContent =
-        `Дорогой ${decodedName}`;
+        `Дорогой ${decodedName}!`;
   }
 } else {
   document.getElementById("greeting").textContent = `Дорогие гости!`;
