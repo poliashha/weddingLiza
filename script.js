@@ -192,22 +192,52 @@ button.addEventListener("touchend", function (e) {
   this.classList.remove("touch-pressed");
 });
 
-function initScrollAnimation() {
+function initFirstAnimation() {
   const containers = document.querySelectorAll(".first");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 },
+  ); // ✅ добавляем сюда
+
   containers.forEach((container) => {
     observer.observe(container);
   });
 }
-document.addEventListener("DOMContentLoaded", initScrollAnimation);
+
+// Функция для анимации элементов .card
+function initCardAnimation() {
+  const containers = document.querySelectorAll(".card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 },
+  ); // ✅ и сюда
+
+  containers.forEach((container) => {
+    observer.observe(container);
+  });
+}
+
+// Запускаем обе функции после загрузки страницы
+document.addEventListener("DOMContentLoaded", () => {
+  initFirstAnimation();
+  initCardAnimation();
+});
 
 const urlParams = new URLSearchParams(window.location.search);
 const nameParam = urlParams.get("name");
