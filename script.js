@@ -214,19 +214,18 @@ const nameParam = urlParams.get("name");
 const arr = ["Мама", "Любовь", "Лариса", "Екатерина", "Полина"];
 if (nameParam) {
   const decodedName = decodeURIComponent(nameParam.replace(/\+/g, " "));
-
-  
+  const names = decodedName.split( );
 
   if (decodedName.includes(" ")) {
     document.getElementById("greeting").textContent =
-      `Уважаемые ${decodedName},`;
+      `${name[0]} и ${name[2]}`;
   } else {
     if (arr.includes(decodedName)) {
       document.getElementById("greeting").textContent =
-        `Уважаемая ${decodedName},`;
+        `Дорогая ${decodedName},`;
     } else
       document.getElementById("greeting").textContent =
-        `Уважаемый ${decodedName},`;
+        `Дорогой ${decodedName},`;
   }
 } else {
   document.getElementById("greeting").textContent = `Дорогие гости!`;

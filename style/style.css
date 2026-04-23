@@ -92,6 +92,7 @@ body {
   color: var(--kursiv-color);
   font-size: 40px;
   font-family: Cormorant-Regular;
+  text-align: center;
 }
 
 .box-guests{
@@ -112,12 +113,6 @@ font-family: var(--kursiv-text);
   gap: 11px;
 }
 
-.place{
-  gap: 11px;
-  max-width: 412px;
-  width: 100%;
-  padding: 0;
-}
 
 .map-button {
   padding: 5px 43px;
