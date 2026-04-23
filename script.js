@@ -1,6 +1,6 @@
 
 const TELEGRAM_BOT_TOKEN =
-  "vk1.a.KVlhuEkokxON5mbZjulmq2_FQ-QCO_voY-GD_b7_INDlTyVKohXvbq5rtRkslt69YoP1MT5S39eLddFK0XgYDRVDRtlTwMGCIdRwzkSlotx4veTAkpuN928yR6KE4cq-h1zFPd64WINmHERHjF9ZDiKxkyNwukRM5zV3-6N2W56W9xbNA-CzfWaqhTaMV3SgHp7z6luoeIoUoDcEPDez9w";
+  "vk1.a.VUQWRgUI1_ry0WObPW_bxEx6VbzfrAjbHKdzEcCd1xm05ZHc1xcvP0Gy6hUQxw4eckfI8Iw59ABNf8Z7ALZ1pM_yely9wZ0srG2kqqBveqzZarmvf24yV4ag8yfJokb6FgCh6s2imtYVVWaZAqZLitQU5ibqzdemnqV8_7hJNvGFhaa-0IBvuwUtH1AmGFhnSijLU3bu4mYWu2993qGwlA";
 const TELEGRAM_CHAT_ID = "224996524";
 const API = `https://api.vk.com/method/messages.send`;
 
