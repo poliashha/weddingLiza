@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const urlParams = new URLSearchParams(window.location.search);
 const nameParam = urlParams.get("name");
-const arr = ["Мама", "Любовь", "Лариса", "Екатерина", "Полина"];
+const arr = ["Мама", "Любовь", "Лариса", "Екатерина", "Полина" , "мама"];
 if (nameParam) {
   const decodedName = decodeURIComponent(nameParam.replace(/\+/g, " "));
   const names = decodedName.split(' ');
