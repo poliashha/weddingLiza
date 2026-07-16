@@ -227,7 +227,7 @@ font-family: var(--kursiv-text);
   content: "дней";
   position: absolute;
   top: 75px;
-  right: 14px;
+  right: 8px;
   font-size: 15px;
   font-family: var(--main-font);
   font-weight: 400;
